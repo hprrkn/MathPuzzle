@@ -3,15 +3,27 @@ for num in 1000..9999 do
     for i in 0..3 do
          array<<num.to_s.split(//,4)[i]
     end
-    if array[0].to_i*(array[1]+array[2]+array[3]).to_i == num
-        p num
-        break
-    else
-    if (array[0]+array[1]).to_i*(array[2]+array[3]).to_i == num
+    if array[0].to_i*(array[1]+array[2]+array[3]).to_i == num then
         p num
         break
     end
-    if (array[0]+array[1]+array[2]).to_i*array[3].to_i == num
+    if array[0].to_i*array[1].to_i*(array[2]+array[3]).to_i == num then
+        p num
+        break
+    end
+    if array[0].to_i*(array[1]+array[2]).to_i*array[3].to_i == num then
+        p num
+        break
+    end
+    if (array[0]+array[1]).to_i*(array[2]+array[3]).to_i == num then
+        p num
+        break
+    end
+    if (array[0]+array[1]).to_i*array[2].to_i*array[3].to_i == num then
+        p num
+        break
+    end
+    if (array[0]+array[1]+array[2]).to_i*array[3].to_i == num then
         p num
         break
     end
