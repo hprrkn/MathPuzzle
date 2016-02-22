@@ -28,5 +28,4 @@ for num in 1000..9999 do
 		p num
 		break
 	end
-end
-	
+end	
