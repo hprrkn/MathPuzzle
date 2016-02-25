@@ -7,7 +7,7 @@ end
 
 for n in 1..100 do
     if k == 1
-        p "the end at #{n}th times"
+        p "the end at #{n-1}th times"
         break
     else
         if array.length > l*2
@@ -17,7 +17,7 @@ for n in 1..100 do
             end
             k = array.length
         else
-            for s in 1..(array.length/2).floor
+            for s in 1..array.length/2.floor
                 array.delete_at(0)
                 s += 1
             end
