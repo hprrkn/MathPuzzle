@@ -1,14 +1,13 @@
+k = 20
+l = 5
 array=[]
-for i in 1..20 do
+for i in 1..k do
     array << i
 end
 
-k=100
-l=5
-
 for n in 1..100 do
     if k == 1
-        p n
+        p "the end at #{n}th times"
         break
     else
         if array.length > l*2
@@ -27,4 +26,3 @@ for n in 1..100 do
     end
     n += 1
 end
-
