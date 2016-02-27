@@ -1,28 +1,13 @@
-k = 20
-l = 5
-array=[]
-for i in 1..k do
-    array << i
-end
-
-for n in 1..100 do
-    if k == 1
-        p "the end at #{n-1}th times"
-        break
+i = 100
+k = 5
+i = 1
+while s > 1 do
+    if s > k*2 then
+        s = s - k
     else
-        if array.length > l*2
-            for s in 1..l
-                array.delete_at(0)
-                s += 1
-            end
-            k = array.length
-        else
-            for s in 1..array.length/2.floor
-                array.delete_at(0)
-                s += 1
-            end
-            k = array.length
-        end
+        s = s/2.ceil
     end
-    n += 1
+    i+=1
 end
+p i
+~
